@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/queries.css" />
+
+    <script defer src="/script.js"></script>
+
+    <title>Results summary component</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="result-container">
+        <p class="heading-m result-title">Your Result</p>
+        <div class="circle">
+          <div class="score-container">
+            <p class="heading-xl score-text-big">76</p>
+            <p class="body-bold score-text-small">of 100</p>
+          </div>
+        </div>
+        <p class="heading-l remark">Great</p>
+        <p class="body remark-desc">
+          Your performance exceed 65% of the people conducting the test here!
+        </p>
+      </div>
+      <div class="summary-container">
+        <p class="heading-m summary-title">Summary</p>
+        <ul>
+          <li class="skill-container reaction-container">
+            <div class="skill-container-left">
+              <img id="reaction-icon" class="icon" alt="Reaction Icon" />
+              <p class="skill-text reaction-text body"></p>
+            </div>
+            <div class="skill-container-right">
+              <p id="reaction-score" class="score-number body-bold"></p>
+              <p class="score-max body-bold">/ 100</p>
+            </div>
+          </li>
+          <li class="skill-container memory-container">
+            <div class="skill-container-left">
+              <img id="memory-icon" class="icon" alt="Memory Icon" />
+              <p class="skill-text memory-text body"></p>
+            </div>
+            <div class="skill-container-right">
+              <p id="memory-score" class="score-number body-bold"></p>
+              <p class="score-max body-bold">/ 100</p>
+            </div>
+          </li>
+          <li class="skill-container verbal-container">
+            <div class="skill-container-left">
+              <img id="verbal-icon" class="icon" alt="Verbal Icon" />
+              <p class="skill-text verbal-text body"></p>
+            </div>
+            <div class="skill-container-right">
+              <p id="verbal-score" class="score-number body-bold"></p>
+              <p class="score-max body-bold">/ 100</p>
+            </div>
+          </li>
+          <li class="skill-container visual-container">
+            <div class="skill-container-left">
+              <img id="visual-icon" class="icon" alt="Visual Icon" />
+              <p class="skill-text visual-text body"></p>
+            </div>
+            <div class="skill-container-right">
+              <p id="visual-score" class="score-number body-bold"></p>
+              <p class="score-max body-bold">/ 100</p>
+            </div>
+          </li>
+        </ul>
+        <button class="body-bold btn-continue">Continue</button>
+      </div>
+    </div>
+  </body>
+</html>
